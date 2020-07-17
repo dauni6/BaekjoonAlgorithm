@@ -13,9 +13,9 @@ public class Problem11283 {
 
         String word = br.readLine(); //글자입력
 
-        int reuslt = word.charAt(0)-0xAC00 + 1;
+        int result = word.charAt(0)-0xAC00 + 1;
 
-        bw.write(reuslt + "");
+        bw.write(result + "");
         bw.flush();
 
 
