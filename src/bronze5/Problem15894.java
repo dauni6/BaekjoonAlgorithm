@@ -9,10 +9,13 @@ public class Problem15894 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         long n = Long.valueOf(br.readLine());
-        long sum = 0;
-        for (int i = 0; i < n; i++) {
-            
-        }
+        /*long sum = 0;
+        for (long i = n; i > 0; i--) {
+            sum += i * 4;
+        }*/
+
+        bw.write(n * 4 + "");
+        bw.flush();
 
     }
 }
