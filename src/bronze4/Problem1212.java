@@ -12,13 +12,12 @@ public class Problem1212 {
         String num = br.readLine();
 
         if (333334 > num.length()){
-            String octal = Long.toOctalString(Long.valueOf(num)); //8진수로 변환
-            long oc8 = Long.parseLong(octal);
-            String binary = Long.toBinaryString(oc8); //2진수로 변환
-            if (!binary.equals("0")) {
-                bw.write(binary + "");
-                bw.flush();
-            }
+            int octal = Integer.valueOf(num, 8); //8진수
+            int decimal = Integer.valueOf(String.valueOf(octal), 10);
+            int binary = Integer.valueOf(String.valueOf(decimal), 2);
+
+            bw.write(binary + "");
+            bw.flush();
         }
 
 
