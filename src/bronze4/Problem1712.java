@@ -16,6 +16,7 @@ public class Problem1712 {
         int c = Integer.valueOf(input[2]); //노트북 가격
 
         if (b>=c) {
+            //한대 생산 가병비용(b)이 같거나 b가 더 크면 절대 손익분기점을 넘을 수 없다.
             bw.write("-1");
         } else {
             bw.write(a/(c-b) + 1 + "");
